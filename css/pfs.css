@@ -1,8 +1,29 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid-container {
+  display: grid;
+  min-height: 100%;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas:
+  "sidenav header"
+  "sidenav main";
+  height:100vh;
+}
+
+.header{
+  grid-area:header;
+  background-color: #648ca6;
+}
+
 .sidenav {
-  height: 80%;
+  height: 90%;
   width:20%;
   background-color: #111;
-  position: fixed;
+  position: relative;
   z-index: 1;
   top:0;
   transition: 0.5s;
@@ -26,11 +47,5 @@
 .icons{
   color:white;
   margin-right: 10px;
-
-}
-.header{
-  height: 40px;
-  text-align: :center;
-  background: black;
 
 }
