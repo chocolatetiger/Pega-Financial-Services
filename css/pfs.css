@@ -6,32 +6,38 @@
 .grid-container {
   display: grid;
   min-height: 100%;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 258px 1fr;
   grid-template-rows: 50px 1fr;
   grid-template-areas:
-  "sidenav header"
+  "header header"
   "sidenav main";
   height:100vh;
 }
 
 .header{
   grid-area:header;
-  background-color: #648ca6;
+  display:flex;
+  background-color: #333333;
+  font-family: 'Russo One', sans-serif;
+  justify-content: space-between;
+  color:white;
+  border-bottom: 1px solid gray;
+  align-items:center;
+}
+.header .title{
+  font-size: 20.5px;
+  margin-left: 12px;
 }
 
 .sidenav {
-  height: 90%;
-  width:20%;
-  background-color: #111;
-  position: relative;
-  z-index: 1;
-  top:0;
-  transition: 0.5s;
-  margin-top: 50px;
+  display: inline-block;
+  grid-area:sidenav;
+  background-color: #333333;
 }
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  font-size: 25px;
+  padding: 20px 20px 20px 20px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
   color:white;
   text-decoration: none;
   display: block;
@@ -40,12 +46,50 @@
 }
 
 .sidenav a:hover{
-  background-color: rgb(128,128,128,0.9);
-  border-top: 1px solid;
+
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
   border-left: 4px solid orange;
+  cursor: pointer;
+}
+
+.main{
+grid-area: main;
+display: grid;
+grid-template-columns: 1fr 300px;
+grid-template-rows: 90px 90px 1fr;
+grid-template-areas:
+"status status"
+"screenflow notification"
+"case information";
 }
 .icons{
-  color:white;
+  color:gray;
   margin-right: 10px;
+}
+.title-icons{
+  margin-right: 10px;
+}
 
+.title-icons i{
+  margin: 10px;
+}
+
+.status{
+grid-area:status;
+background-color:red;
+
+}
+.screenflow{
+  background-color: blue;
+}
+
+.case{
+  background-color: white;
+}
+.notification{
+  background-color: green;
+}
+.information{
+  background-color:cyan;
 }
