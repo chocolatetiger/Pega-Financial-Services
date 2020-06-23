@@ -77,8 +77,46 @@ grid-template-areas:
 
 .status{
 grid-area:status;
-background-color:red;
-
+background-color:white;
+position: relative;
+}
+.row-1{
+  margin-left: 25px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.row-2{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+.status-icon{
+  font-size: 25px;
+  color: green;
+  margin-left:20px;
+}
+.status-desc{
+  font-size: 25px;
+  margin-left:25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color:gray;
+}
+.status-section{
+  font-size: 15px;
+  margin-left:25px;
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  color:gray
+}
+.status-icons{
+  font-size: 20px;
+  color:rgb(103, 133, 142);
+  margin-left: 400px;
+}
+.status-icons i{
+  margin-left: 20px
 }
 .screenflow{
   background-color: blue;
