@@ -58,12 +58,9 @@ background-color: 	rgb(238, 238, 238);
 grid-area: main;
 display: grid;
 grid-template-columns: 1fr 300px;
-grid-template-rows: 110px 110px 1fr;
+grid-template-rows: 110px 110px 330px 1fr;
 column-gap: 10px;
-grid-template-areas:
-"status status"
-"screenflow notification"
-"case information";
+row-gap: 10px;
 }
 .icons{
   color:gray;
@@ -79,6 +76,10 @@ grid-template-areas:
 
 .status{
 grid-area:status;
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 2;
 background-color:white;
 position: relative;
 }
@@ -152,7 +153,8 @@ position: relative;
 }
 .notification{
   background-color: white;
-  /* border: 1px solid red; */
+  grid-column-start: 2;
+  grid-column-end:3;
 }
 .notif-inner{
   background-color: green;
@@ -167,13 +169,25 @@ position: relative;
 
 .screenflow{
   background-color: blue;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end:3;
 }
 
 .case{
   background-color: white;
+  grid-column-start: 1;
+  grid-column-end:2;
+  grid-row-start: 3;
+  grid-row-end:5;
 }
 
 .information{
-  grid-area: information;
-  background-color:cyan;
+  background-color:white;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start:3;
+  grid-row-end:4;
+  box-shadow:        1px 1px 5px 2px #ccc;  
 }
