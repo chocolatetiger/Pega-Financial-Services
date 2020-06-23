@@ -168,7 +168,7 @@ position: relative;
 }
 
 .screenflow{
-  background-color: blue;
+  background-color: 	rgb(238, 238, 238);
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
@@ -181,6 +181,9 @@ position: relative;
   grid-column-end:2;
   grid-row-start: 3;
   grid-row-end:5;
+  box-shadow:1px 1px 5px 2px #ccc;
+  margin-bottom: 15px;
+  margin-left: 8px;
 }
 
 .information{
@@ -189,5 +192,12 @@ position: relative;
   grid-column-end: 3;
   grid-row-start:3;
   grid-row-end:4;
-  box-shadow:        1px 1px 5px 2px #ccc;  
+  box-shadow:1px 1px 5px 2px #ccc;
+  text-align: justify;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+.information li{
+  margin-left: 30px;
+  margin-top: 10px;
 }
