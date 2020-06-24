@@ -116,7 +116,7 @@ position: relative;
 .status-icons{
   font-size: 20px;
   color:rgb(103, 133, 142);
-  margin-left: 450px;
+  margin-left:450px;
 }
 .status-icons i{
   margin-left: 20px;
@@ -152,20 +152,30 @@ position: relative;
   font-family: 'Roboto', sans-serif;
 }
 .notification{
-  background-color: white;
+  background-color: green;
   grid-column-start: 2;
   grid-column-end:3;
+  box-shadow:1px 1px 5px 2px #ccc;
+  border: 10px solid white;
+  position: relative;
 }
 .notif-inner{
-  background-color: green;
-  height: 90px;
-  width:260px;
-  border:1px solid;
-  margin-left: 19px;
-  margin-right: 19px;
-  margin-top:9px;
-  margin-bottom: 9px;
+  font-family: 'Roboto', sans-serif;
+  text-align:center;
+  color:white;
+  left: 40px
+
 }
+.notif-inner i{
+  position: relative;
+  left:237px;
+
+}
+.notif-inner b{
+  position: relative;
+  top:30px;
+}
+
 
 .screenflow{
   background-color: 	rgb(238, 238, 238);
