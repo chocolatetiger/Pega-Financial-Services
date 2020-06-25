@@ -195,7 +195,55 @@ position: relative;
   box-shadow:1px 1px 5px 2px #ccc;
   margin-bottom: 15px;
   margin-left: 8px;
+  display: flex;
+  flex-direction: column;
 }
+#Business-Case{
+   font-family: 'Roboto', sans-serif;
+   margin-left: 20px;
+   margin-bottom: 40px;
+}
+#Business-Case::after{
+  content: "* indicates required field";
+  font-size: 12px;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+}
+.boxes li textarea{
+  margin-bottom: 30px;
+}
+.box-label{
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+.case-form{
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  /* justify-content:flex-start; */
+  flex-direction: column;
+}
+.case .boxes{
+  margin-left: 20px;
+  list-style-type:none;
+}
+.case-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin-left: 1.25em;
+  margin-bottom:40px;
+}
+.right-buttons{
+  margin-right: 0.2em;
+}
+.right-buttons button{
+  margin-right: 2em;
+
+}
+
 #arrowlayout {
 margin: 30px -10px -10px -8px;
 }
