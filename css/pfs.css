@@ -90,8 +90,15 @@ position: relative;
 }
 .row-2{
   display: flex;
+  justify-content:space-between;
+  margin-top: 10px
+  flex-direction:row;
+
+}
+.row-2-left{
+  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
-  margin-top: 10px;
 }
 .status-icon{
   font-size: 25px;
@@ -116,7 +123,7 @@ position: relative;
 .status-icons{
   font-size: 20px;
   color:rgb(103, 133, 142);
-  margin-left:450px;
+  margin-right: 10px;
 }
 .status-icons i{
   margin-left: 20px;
@@ -231,9 +238,7 @@ position: relative;
   margin-left: 20px;
   margin-right: 5%;
 }
-.buttons .right-buttons{
-  color:green;
-}
+
 #arrowlayout {
 margin: 30px -10px -10px -8px;
 }
