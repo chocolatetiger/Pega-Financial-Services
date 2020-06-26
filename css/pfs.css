@@ -158,12 +158,13 @@ position: relative;
   box-shadow:1px 1px 5px 2px #ccc;
   border: 10px solid white;
   position: relative;
+
 }
 .notif-inner{
   font-family: 'Roboto', sans-serif;
   text-align:center;
   color:white;
-  left: 40px
+  left: 40px;
 
 }
 .notif-inner i{
@@ -173,7 +174,7 @@ position: relative;
 }
 .notif-inner b{
   position: relative;
-  top:30px;
+    top:30px;
 }
 
 
@@ -210,40 +211,29 @@ position: relative;
   font-family: 'Roboto', sans-serif;
   font-weight: bolder;
 }
-.boxes li textarea{
-  margin-bottom: 30px;
-}
-.box-label{
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-}
-
-.case-form{
+.form{
   display: flex;
-  flex-wrap: wrap;
-  /* align-items: center; */
-  /* justify-content:flex-start; */
   flex-direction: column;
 }
-.case .boxes{
+.input{
+  display:flex;
+  flex-direction: column;
   margin-left: 20px;
-  list-style-type:none;
 }
-.case-buttons{
+.input textarea{
+  flex:1 1 130px;
+  width: 95%;
+  margin-bottom: 40px;
+}
+.buttons{
   display: flex;
-  flex-direction: row;
-  justify-content:space-between;
-  margin-left: 1.25em;
-  margin-bottom:40px;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 5%;
 }
-.right-buttons{
-  margin-right: 0.2em;
+.buttons .right-buttons{
+  color:green;
 }
-.right-buttons button{
-  margin-right: 2em;
-
-}
-
 #arrowlayout {
 margin: 30px -10px -10px -8px;
 }
