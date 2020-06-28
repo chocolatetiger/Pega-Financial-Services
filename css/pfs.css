@@ -237,8 +237,28 @@ position: relative;
   justify-content: space-between;
   margin-left: 20px;
   margin-right: 5%;
+  margin-bottom: 25px;
 }
-
+.button-style{
+  text-decoration:none;
+  display: inline-block;
+  float: left;
+  width: 120px;
+  text-align: center;
+  color:black;
+  transition: all 0.2s ;
+  background: none;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  background: #d1d1d1;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  margin: 10px 0 10px 0;
+  height:30px;
+  line-height: 30px;
+}
+.right-buttons .button-style{
+  margin-left: 10px;
+}
 #arrowlayout {
 margin: 30px -10px -10px -8px;
 }
