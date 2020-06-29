@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* grid-container */
 .grid-container {
   display: grid;
   min-height: 100%;
@@ -13,7 +14,7 @@
   "sidenav main";
   height:100vh;
 }
-
+/* header */
 .header{
   grid-area:header;
   display:flex;
@@ -28,11 +29,14 @@
   font-size: 20.5px;
   margin-left: 12px;
 }
-
+/* sidenavigation  */
 .sidenav {
   display: inline-block;
   grid-area:sidenav;
   background-color: #333333;
+}
+.sidenav::after{
+  color: orange;
 }
 .sidenav a {
   padding: 20px 20px 20px 20px;
@@ -50,9 +54,9 @@
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
   border-left: 4px solid orange;
-  cursor: pointer;
+  cursor: pointer
 }
-
+/* main body */
 .main{
 background-color: 	rgb(238, 238, 238);
 grid-area: main;
@@ -66,6 +70,7 @@ row-gap: 10px;
   color:gray;
   margin-right: 10px;
 }
+/* title bar */
 .title-icons{
   margin-right: 10px;
 }
@@ -73,7 +78,7 @@ row-gap: 10px;
 .title-icons i{
   margin: 10px;
 }
-
+/* status bar */
 .status{
 grid-area:status;
 grid-column-start: 1;
@@ -158,6 +163,7 @@ position: relative;
   color:gray;
   font-family: 'Roboto', sans-serif;
 }
+/* notification box */
 .notification{
   background-color: green;
   grid-column-start: 2;
@@ -183,17 +189,7 @@ position: relative;
   position: relative;
     top:30px;
 }
-
-
-.screenflow{
-  background-color: 	rgb(238, 238, 238);
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end:3;
-}
-
-
+/* case area */
 .case{
   background-color: white;
   grid-column-start: 1;
@@ -209,7 +205,8 @@ position: relative;
 #Business-Case{
    font-family: 'Roboto', sans-serif;
    margin-left: 20px;
-   margin-bottom: 40px;
+   margin-top: 10px;
+   margin-bottom: 30px;
 }
 #Business-Case::after{
   content: "* indicates required field";
@@ -218,6 +215,12 @@ position: relative;
   font-family: 'Roboto', sans-serif;
   font-weight: bolder;
 }
+.textarea-labels{
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
 .form{
   display: flex;
   flex-direction: column;
@@ -258,6 +261,14 @@ position: relative;
 }
 .right-buttons .button-style{
   margin-left: 10px;
+}
+/* screenflow */
+.screenflow{
+  background-color: 	rgb(238, 238, 238);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end:3;
 }
 #arrowlayout {
 margin: 30px -10px -10px -8px;
@@ -341,6 +352,7 @@ margin: 30px -10px -10px -8px;
 #arrowlayout li a:hover:after {
     border-color: transparent transparent transparent #367AB5;
 }
+/* information box */
 .information{
   background-color:white;
   grid-column-start: 2;
@@ -348,11 +360,17 @@ margin: 30px -10px -10px -8px;
   grid-row-start:3;
   grid-row-end:4;
   box-shadow:1px 1px 5px 2px #ccc;
-  text-align: justify;
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
 }
-.information li{
-  margin-left: 30px;
-  margin-top: 10px;
+.information ul{
+  /* margin-top:5px; */
+  margin-bottom:5px;
+}
+.information-list{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin-left: 30px;
 }

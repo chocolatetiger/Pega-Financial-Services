@@ -11,17 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Russo+One&display=swap" rel="stylesheet">
   </head>
   <body>
+  <!-- grid container -->
   <div class="grid-container">
+    <!-- header -->
     <header class="header">
       <div class="title">
         Pega Financial Services
       </div>
       <div class="title-icons">
-        <i class="fab fa-uikit" style="color:blue;"></i>
-        <i class="fab fa-quinscape" style="color:orange;"></i>
-        <i class="fas fa-guitar " style="color:red;"></i>
+        <i class="fas fa-question-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fab fa-amilia"></i>
       </div>
     </header>
+    <!-- side navigation -->
     <aside class="sidenav">
       <div>
         <nav>
@@ -36,6 +39,7 @@
       </div>
     </aside>
     <main class="main">
+      <!-- status bar -->
       <div class="status">
         <div class="row-1">
           20110291998
@@ -84,6 +88,7 @@
           </div>
         </div>
       </div>
+      <!-- screenflow -->
       <div class="screenflow">
         <div align="center">
                     <ul id="arrowlayout">
@@ -96,21 +101,26 @@
                     </ul>
                 </div>
       </div>
+      <!-- notificationbox -->
       <div class="notification">
         <div class="notif-inner">
             <i class="fas fa-times"></i>
             <b>Sucess notification and action</b>
         </div>
       </div>
+      <!-- case area -->
       <div class="case">
         <div  id="Business-Case">
           <h1>Business Case</h1>
         </div>
         <div class="form">
           <div class="input">
-            <textarea></textarea>
-            <textarea></textarea>
-            <textarea></textarea>
+            <label for="area-1" class="textarea-labels">Detailed initiative description *</label>
+            <textarea id="area-1"></textarea>
+            <label for="area-2" class="textarea-labels">Key new risks/issues *</label>
+            <textarea id="area-2"></textarea>
+            <label for="area-3" class="textarea-labels">Technology systems impacted *</label>
+            <textarea id="area-3"></textarea>
           </div>
           <div class="buttons">
             <div class="left-buttons">
@@ -125,16 +135,16 @@
         </div>
       </div>
       <div class="information">
-        <ul style="list-style-type:none;">
-          <li>Core Information</li>
-          <li><b>Business Case</b></li>
-          <li>Business Considerations/Escalations</li>
-          <li>Risk Classification Matrix</li>
-          <li>Legal Entity Identification</li>
-          <li>NBIA Working Group</li>
-          <li>Functional Commentary</li>
-          <li>Treasury Considerations</li>
-          <li>Compliance Considerations</li>
+        <ul style="list-style-type:none;" class="information-list">
+            <li>Core Information</li>
+            <li><b>Business Case</b></li>
+            <li>Business Considerations/Escalations</li>
+            <li>Risk Classification Matrix</li>
+            <li>Legal Entity Identification</li>
+            <li>NBIA Working Group</li>
+            <li>Functional Commentary</li>
+            <li>Treasury Considerations</li>
+            <li>Compliance Considerations</li>
         </ul>
       </div>
     </main>
