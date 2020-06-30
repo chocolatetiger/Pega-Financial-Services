@@ -35,9 +35,6 @@
   grid-area:sidenav;
   background-color: #333333;
 }
-.sidenav::after{
-  color: orange;
-}
 .sidenav a {
   padding: 20px 20px 20px 20px;
   font-size: 15px;
@@ -63,7 +60,7 @@ grid-area: main;
 display: grid;
 grid-template-columns: 1fr 300px;
 grid-template-rows: 110px 110px 330px 1fr;
-column-gap: 10px;
+               column-gap: 10px;
 row-gap: 10px;
 }
 .icons{
@@ -96,8 +93,8 @@ position: relative;
 .row-2{
   display: flex;
   justify-content:space-between;
-  margin-top: 10px
-  flex-direction:row;
+  margin-top: 10px;
+  flex-direction:row
 
 }
 .row-2-left{
@@ -171,7 +168,7 @@ position: relative;
   box-shadow:1px 1px 5px 2px #ccc;
   border: 10px solid white;
   position: relative;
-
+  margin-right: 10px;
 }
 .notif-inner{
   font-family: 'Roboto', sans-serif;
@@ -259,6 +256,7 @@ position: relative;
   height:30px;
   line-height: 30px;
 }
+
 .right-buttons .button-style{
   margin-left: 10px;
 }
@@ -362,6 +360,7 @@ margin: 30px -10px -10px -8px;
   box-shadow:1px 1px 5px 2px #ccc;
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
+  margin-right: 10px;
 }
 .information ul{
   /* margin-top:5px; */
