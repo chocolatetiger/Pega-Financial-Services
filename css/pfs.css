@@ -45,6 +45,10 @@
   border-top: 1px solid transparent;
   border-left: 4px solid transparent;
 }
+.fas.fa-chevron-down.accordion-icon{
+  margin-left: 120px;
+  color:  gray;
+}
 
 .sidenav a:hover{
 
@@ -147,7 +151,28 @@ position: relative;
 .row-3-icons{
   font-size: 20px;
   margin-left: 79px;
-  color:orange;
+  color:white;
+}
+
+.row-3-label{
+  font-size: 10px;
+  background-color: rgb(103, 133, 142);
+  display: inline-block;
+  padding: 1px 10px 1px 10px;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 10px;
+}
+.row-3-label::before{
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-right: 10px solid rgb(103, 133, 142);
+  border-bottom: 7px solid transparent;
+  right:101px;
+  bottom: 0.3px;
 }
 .circles{
   font-size: 10px;
