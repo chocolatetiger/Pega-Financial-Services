@@ -9,6 +9,7 @@
     <link type="text/css" rel="stylesheet" href="./css/pfs.css">
     <link type="text/css" rel="stylesheet" href="./css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Russo+One&display=swap" rel="stylesheet">
+    <script src="pfs.js" defer></script>
   </head>
   <body>
   <!-- grid container -->
@@ -107,8 +108,7 @@
       <div class="screenflow">
         <div align="center">
                     <ul id="arrowlayout">
-                        <li class="active">
-			<a href="#step1">Step 1</a></li>
+                        <li class="active"><a href="#step1">Step 1</a></li>
                         <li class="active"><a href="#step2">Step 2</a></li>
                         <li class="active"><a href="#step3">Step 3</a></li>
                         <li class="active"><a href="#step4">Step 4</a></li>
@@ -125,25 +125,27 @@
       </div>
       <!-- case area -->
       <div class="case">
-        <div  id="Business-Case">
-          <h1>Business Case</h1>
-        </div>
         <div class="form">
-          <div class="input">
-            <label for="area-1" class="textarea-labels">Detailed initiative description *</label>
-            <textarea id="area-1"></textarea>
-            <label for="area-2" class="textarea-labels">Key new risks/issues *</label>
-            <textarea id="area-2"></textarea>
-            <label for="area-3" class="textarea-labels">Technology systems impacted *</label>
-            <textarea id="area-3"></textarea>
+          <div class="case-replace">
+            <div  id="Business-Case">
+              <h1>Business Case-1</h1>
+            </div>
+            <div class="input">
+              <label for="area-1" class="textarea-labels">Detailed initiative description *</label>
+              <textarea id="area-1"></textarea>
+              <label for="area-2" class="textarea-labels">Key new risks/issues *</label>
+              <textarea id="area-2"></textarea>
+              <label for="area-3" class="textarea-labels">Technology systems impacted *</label>
+              <textarea id="area-3"></textarea>
+            </div>
           </div>
           <div class="buttons">
             <div class="left-buttons">
               <a href="#" class="button-style">Cancel</a>
             </div>
             <div class="right-buttons">
-              <a href="#" class="button-style">Previous</a>
-              <a href="#" class="button-style">Next</a>
+              <a href="#" class="button-style" id="previous-button">Previous</a>
+              <a href="#" class="button-style" id="next-button">Next</a>
               <a href="#" class="button-style">Save</a>
             </div>
           </div>
